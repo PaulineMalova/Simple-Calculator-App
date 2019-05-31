@@ -6,50 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="232dp"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:hint="Number 1"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="128dp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="232dp"
-        android:layout_height="63dp"
-        android:ems="10"
-        android:hint="Number 1"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="128dp" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="232dp"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:hint="Number 2"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="251dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="232dp"
+            android:layout_height="63dp"
+            android:text="Result"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="238dp"
-        android:layout_height="59dp"
-        android:ems="10"
-        android:hint="Number 2"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="251dp" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:onClick="onButtonClick"
+                android:text="SUM"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="367dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="232dp"
-        android:layout_height="42dp"
-        android:text="Result"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="120dp"
-        android:layout_height="47dp"
-        android:onClick="onButtonClick"
-        android:text="SUM"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="367dp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:onClick="onButton2Click"
+                android:text="Multiply"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="367dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onButton2Click"
-        android:text="Multiply"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="367dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:onClick="onButton3Click"
+                android:text="Divide"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:onClick="onButton4Click"
+                android:text="Subtract"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
